@@ -1,0 +1,66 @@
+{
+    "name": "NewInputSystem",
+    "maps": [
+        {
+            "name": "Mouse",
+            "id": "ee361570-bb4d-4221-8243-4839f8178504",
+            "actions": [
+                {
+                    "name": "AIM",
+                    "type": "Value",
+                    "id": "0e74d0c1-b873-4912-9808-45c2c5b8ecd1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "SHOOT",
+                    "type": "Button",
+                    "id": "53d609e7-3345-4f20-a576-2fa17845444a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fd754149-6372-4dae-b915-3225bcb9d5c1",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "AIM",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46b1d40e-de2e-4412-8283-85e4ea5dded2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "SHOOT",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "PC",
+            "bindingGroup": "PC",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
